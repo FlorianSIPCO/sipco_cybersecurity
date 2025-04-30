@@ -1,0 +1,80 @@
+.tarifs__container {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .tarifs__container h1 {
+    margin-bottom: 3rem;
+  }
+  
+  .tarifs__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .tarif__card {
+    background-color: #11161d;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .tarif__card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tarif__card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--variant-color);
+    font-size: 2.5em;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--main-text);
+  }
+  
+  .tarif__card ul {
+    margin-bottom: 1.5rem;
+    color: var(--variant-text);
+    font-size: 1.2rem;
+  }
+  
+  .tarif__card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .tarif__card .check {
+    color: var(--variant-color);
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .tarif__card .cta {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--variant-color);
+    color: white;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Variante premium */
+  .tarif__card.premium {
+    border: 1px solid var(--variant-color);
+    background-color: #151a21;
+  }
+  

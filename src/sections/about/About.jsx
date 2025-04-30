@@ -13,7 +13,7 @@ const About = () => {
             <EngagementCircle />
           </div>
           <div className="about__title">
-            <h1 className="section-title">À propos de <span>SIPCO</span></h1>
+            <h1 className="section-title">À propos de <a href='https://sipco.fr' target='_blank'><span>SIPCO</span></a></h1>
             <p className="section-subtitle">
               Une expertise forgée par plus de 40 ans d'expérience en cybersécurité.
             </p>
