@@ -31,7 +31,7 @@ const Header = () => {
         <h3>Notre mission : assurer la continuité, la confidentialité et l'intégrité de vos systèmes et de vos données</h3>
         
         {/* CTA */}
-        <Link to='#contact' className='cta'>Nous contacter <IoMdCall className='icon'/></Link>
+        <a href='#contact' className='cta'>Besoin d'un audit ou d'un conseil ? Contactez-nous<IoMdCall className='icon'/></a>
       </div>
 
       {/* Video */}

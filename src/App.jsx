@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import ScrollToTop from './utils/ScrollToTop'
 import Nav from './components/nav/Nav'
-import Header from './components/header/Header'
-import About from './components/about/About'
-import Services from './components/services/Services'
-import Tarifs from './components/tarifs/Tarifs'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import Header from './sections/header/Header'
+import About from './sections/about/About'
+import Services from './sections/services/Services'
+import Tarifs from './sections/tarifs/Tarifs'
+import Contact from './sections/contact/Contact'
+import Footer from './sections/footer/Footer'
 
 function App() {
   return (

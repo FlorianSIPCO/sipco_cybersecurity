@@ -1,0 +1,95 @@
+#services
+
+.services__container {
+    margin: 5em auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-bg);
+}
+
+.services__title {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.services__title h1 {
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+.services__title h1::after {
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 10px;
+    background-color: var(--main-text);
+    border-radius: 2px;
+    top: 50%;
+    left: 55%;
+}
+
+.services__title h2 {
+    color: var(--variant-text);
+    width: 100%;
+    margin-top: -1rem;
+}
+
+/* section link */
+.services__links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.services__links h3 {
+    width: 70%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 1em;
+    position: relative;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+}
+
+.links a {
+    margin: 1em 0;
+    transition: var(--transition);
+    position: relative;
+}
+
+.links a:hover {
+    color: var(--variant-color);
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    left: -1.15rem;
+    top: 0.6em;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--variant-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover::before {
+    transform: scale(1.4);
+}
+  

@@ -3,7 +3,11 @@ import './tarifs.css'
 
 const Tarifs = () => {
   return (
-    <div>Tarifs</div>
+    <section id='tarifs'>
+      <div className='container'>
+        Tarifs
+      </div>
+    </section>
   )
 }
 
