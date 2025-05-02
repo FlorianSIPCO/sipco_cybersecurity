@@ -14,7 +14,19 @@
   
   .contact__container h1 {
     margin-bottom: 1rem;
+    position: relative;
   }
+
+  .contact__container h1::after {
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 10px;
+    background-color: var(--main-text);
+    border-radius: 2px;
+    top: 50%;
+    left: 35%;
+}
   
   .contact__container h2 {
     color: var(--variant-text);

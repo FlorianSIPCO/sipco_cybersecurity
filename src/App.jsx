@@ -7,15 +7,17 @@ import Services from './sections/services/Services'
 import Tarifs from './sections/tarifs/Tarifs'
 import Contact from './sections/contact/Contact'
 import Footer from './sections/footer/Footer'
+import MentionsLegalesPage from './pages/mentions-legales'
+import PolitiqueDeConfidentialitePage from './pages/politique-de-confidentialite'
 
 function App() {
   return (
     <>
-    <Nav />
     <ScrollToTop />
       <Routes>
         <Route path='/' element={
           <>
+          <Nav />
             <Header />
             <About />
             <Services />
@@ -25,6 +27,8 @@ function App() {
           </>
         } />
         <Route path='/backup' />
+        <Route path='/mentions-legales' element={<MentionsLegalesPage />}/>
+        <Route path='/politique-de-confidentialite' element={<PolitiqueDeConfidentialitePage />}/>
       </Routes>
     </>
   )

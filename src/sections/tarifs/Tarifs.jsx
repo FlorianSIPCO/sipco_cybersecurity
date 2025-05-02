@@ -31,6 +31,7 @@ const Tarifs = () => {
               </ul>
               <a href="#contact" className="cta">Contacter un expert</a>
             </div>
+
           </div>
       </div>
     </section>
