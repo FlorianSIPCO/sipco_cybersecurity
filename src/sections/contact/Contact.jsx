@@ -28,7 +28,7 @@ const Contact = () => {
             <MdEmail className='icon' />
             Envoyer un email
           </a>
-          <a href="tel:+33299999999" className='contact__link'>
+          <a href="tel:+33299761616" className='contact__link'>
             <FaPhoneAlt className='icon' />
             Nous appeler
           </a>

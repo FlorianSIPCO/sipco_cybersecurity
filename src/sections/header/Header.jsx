@@ -13,7 +13,7 @@ const Header = () => {
       {/* Top bar */}
       <div className="topbar">
         <img src={logo} alt="Logo SIPCO" />
-        <Link className='cta'>
+        <Link to="https://api.sipco.fr/auth/login.php" className='cta'>
             Se connecter 
             <GoArrowUpRight className='icon'/>
         </Link>
@@ -31,7 +31,8 @@ const Header = () => {
         <h3>Notre mission : assurer la continuité, la confidentialité et l'intégrité de vos systèmes et de vos données</h3>
         
         {/* CTA */}
-        <a href='#contact' className='cta'>Besoin d'un audit ou d'un conseil ? Contactez-nous<IoMdCall className='icon'/></a>
+        <a href='#contact' className='cta desktop__cta'>Besoin d'un audit ou d'un conseil ? Contactez-nous<IoMdCall className='icon'/></a>
+        <a href='#contact' className='cta mobile__cta'>Besoin d'un audit ou d'un conseil ?<IoMdCall className='icon'/></a>
       </div>
 
       {/* Video */}

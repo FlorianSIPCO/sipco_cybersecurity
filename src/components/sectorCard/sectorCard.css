@@ -62,3 +62,13 @@
     color: #ccc;
   }
   
+    /* Responsive design */
+    @media (max-width: 767px) {
+      .sector-card-back p {
+        text-align: center;
+      }
+      
+      .sector-card {
+        height: 200px;
+      }
+    }

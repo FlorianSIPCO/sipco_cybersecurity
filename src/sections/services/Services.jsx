@@ -13,10 +13,10 @@ const Services = () => {
         <div className="services__links">
           <h3>[ <span>Les secteurs</span> ]</h3>
           <div className='links'>
-            <Link to='/'>Audit & diagnostic de sécurité</Link>
-            <Link to='/'>Sécurisation des infrastructures & données</Link>
-            <Link to='/'>Surveillance & réponse aux incidents</Link>
-            <Link to='/'>Sensibilisation & formation des utilisateurs</Link>
+            <Link to='/services/audit'>Audit & diagnostic de sécurité</Link>
+            <Link to='/services/security'>Sécurisation des infrastructures & données</Link>
+            <Link to='/services/support'>Surveillance & réponse aux incidents</Link>
+            <Link to='/services/learning'>Sensibilisation & formation des utilisateurs</Link>
           </div>
         </div>
       </div>

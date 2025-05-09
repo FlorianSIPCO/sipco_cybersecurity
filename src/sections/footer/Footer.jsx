@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className='footer__container'>
+    <footer id='footer' className='footer__container'>
       <div className='main__container'>
         <div className='logo__copyright'>
           <a href="https://sipco.fr" target='_blank'>

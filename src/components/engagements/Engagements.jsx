@@ -15,6 +15,8 @@ const engagements = [
 export default function EngagementCircle() {
   const [open, setOpen] = useState(false)
   const [animateClose, setAnimateClose] = useState(false)
+  const isMobile = window.innerWidth <= 768
+  const radius = isMobile ? "8rem" : "15rem"
 
   const handleToggle = () => {
     if (open) {
@@ -46,7 +48,7 @@ export default function EngagementCircle() {
               key={i}
               className="circle-item"
               style={{
-                transform: `rotate(${angle}deg) translate(15rem) rotate(-${angle}deg)`,
+                transform: `rotate(${angle}deg) translate(${radius}) rotate(-${angle}deg)`,
                 transitionDelay: `${i * 0.2}s`
               }}
             >

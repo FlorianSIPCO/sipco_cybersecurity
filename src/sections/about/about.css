@@ -89,3 +89,73 @@
     gap: 2rem;
     justify-items: center;
   }
+
+  /* Responsive design */
+  @media (max-width: 767px) {
+    .about__container {
+      max-width: 100vw;
+    }
+
+    .engagements__container {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .about__button {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+    .about__title {
+      padding: 0 1rem;
+    }
+  
+    .section-title,
+    .section-subtitle {
+      text-align: center;
+    }
+  
+    .about__sectors {
+      width: 90%;
+      margin-top: 3rem;
+    }
+
+    .about__sectors h3 {
+      font-size: 1.6em;
+    }
+
+    .sectors__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .sector-card {
+      max-width: 160px;
+      height: 180px;
+    }
+  
+    .sector-card-front h2 {
+      font-size: 0.9rem;
+      height: 3em;
+    }
+  
+    .sector-card-front .icon {
+      font-size: 2rem;
+    }
+  
+    .sector-card-front .hint {
+      font-size: 1rem;
+    }
+  
+    .sector-card-back {
+      font-size: 0.85rem;
+    }
+  
+    .sector-card-back p {
+      padding: 0.5rem;
+    }
+  }
+  

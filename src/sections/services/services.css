@@ -1,5 +1,3 @@
-#services
-
 .services__container {
     margin: 5em auto;
     height: 50vh;
@@ -92,4 +90,29 @@
 .links a:hover::before {
     transform: scale(1.4);
 }
-  
+
+/* Responsive design */
+@media screen and (max-width: 767px) {
+    .services__container {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .services__title {
+        width: 100%;
+    }
+
+    .services__title h1 {
+        margin-bottom: 1em;
+    }
+
+    .services__title h1::after {
+        height: 5px;
+    }
+    
+    .services__links {
+        margin-top: 1em;
+        width: 100%;
+    }
+}

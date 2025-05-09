@@ -34,6 +34,7 @@
     text-decoration: none;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
+    z-index: 10;
 }
 
 .back-home:hover {
@@ -182,4 +183,16 @@
     color: var(--main-text);
     margin-bottom: 0.5rem;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 767px) {
+    .back-home {
+        font-size: 2em;
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .legal__accordion-title {
+        text-align: left;
+    }
 }

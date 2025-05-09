@@ -23,3 +23,26 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 767px) {
+    .main__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .logo__copyright {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+    }
+}
