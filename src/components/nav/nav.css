@@ -60,7 +60,17 @@ nav a:hover {
   background: var(--accent-color);
 }
 
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+  
+}
 
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* ===================== MOBILES ===================== */
 @media screen and (max-width: 767px) {
   nav a {
     padding: 0.8em 0.8em;

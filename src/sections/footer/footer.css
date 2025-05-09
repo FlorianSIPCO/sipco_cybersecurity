@@ -24,7 +24,18 @@
     justify-content: space-around;
 }
 
-@media screen and (max-width: 767px) {
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+  
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* ===================== MOBILES ===================== */
+@media (max-width: 767px) {
     .main__container {
         display: flex;
         flex-direction: column-reverse;

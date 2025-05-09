@@ -62,13 +62,26 @@
     color: #ccc;
   }
   
-    /* Responsive design */
-    @media (max-width: 767px) {
-      .sector-card-back p {
-        text-align: center;
-      }
-      
-      .sector-card {
-        height: 200px;
-      }
-    }
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+  .sector-card-face {
+    font-size: 1.2em;
+  }
+  
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* ===================== MOBILES ===================== */
+@media (max-width: 767px) {
+  .sector-card-back p {
+    text-align: center;
+  }
+
+  .sector-card {
+    height: 200px;
+  }
+}

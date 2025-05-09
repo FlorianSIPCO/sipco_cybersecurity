@@ -20,7 +20,6 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  
   text-align: left;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -78,8 +77,34 @@
   background-color: #151a21;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 767px) {
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+  
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 979px) {
+  .tarifs__container {
+    padding: 2em 0;
+  }
+
+  .tarif__card {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em;
+  }
+  
+  .tarifs__grid h2 {
+    font-size: 2em;
+  }
+
+  .price {
+    font-size: 1.4em;
+  }
+}
+
+/* ===================== MOBILES ===================== */
+@media (max-width: 767px) {
   .tarifs__container {
     padding: 2em 0;
   }

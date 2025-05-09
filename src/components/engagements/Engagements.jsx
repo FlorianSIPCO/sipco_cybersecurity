@@ -1,5 +1,5 @@
 import './engagements.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FaShieldAlt, FaBolt, FaMapMarkerAlt, FaClipboardCheck, FaSmile } from 'react-icons/fa'
 import { PiHandTapFill } from "react-icons/pi";
 import { RxCross2 } from "react-icons/rx";
@@ -15,8 +15,31 @@ const engagements = [
 export default function EngagementCircle() {
   const [open, setOpen] = useState(false)
   const [animateClose, setAnimateClose] = useState(false)
-  const isMobile = window.innerWidth <= 768
-  const radius = isMobile ? "8rem" : "15rem"
+  const [radius, setRadius] = useState('15rem')
+
+  // Adapte le radius en fonction de l'écran
+  // const isMobile = window.innerWidth < 768
+  // const radius = isMobile ? "8rem" : "15rem"
+
+  // Détecte la largeur et adapte le rayon
+  const updateRadius = () => {
+    const width = window.innerWidth
+    if (width < 768) {
+      setRadius('8rem')          // Mobile
+    } else if (width < 980) {
+      setRadius('10rem')         // Tablette portrait
+    } else if (width < 1024) {
+      setRadius('12rem')         // Tablette paysage
+    } else {
+      setRadius('15rem')         // Desktop
+    }
+  }
+
+  useEffect(() => {
+    updateRadius()
+    window.addEventListener('resize', updateRadius)
+    return () => window.removeEventListener('resize', updateRadius)
+  }, [])
 
   const handleToggle = () => {
     if (open) {

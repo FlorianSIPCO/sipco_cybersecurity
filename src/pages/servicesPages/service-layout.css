@@ -95,7 +95,74 @@
   color: var(--main-text);
 }
 
-@media screen and (max-width: 767px) {
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+  .service__detail {
+    padding: 2rem 0;
+  }
+
+  .service__overlay {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .service__title {
+    margin-bottom: 0.2em;
+  }
+
+  .service__content {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .service__content h2 {
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  .service__content .cta {
+    margin: 1em auto;
+  }
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 979px) {
+  .service__detail {
+    padding: 2rem 0;
+  }
+
+  .service__overlay {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .service__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2em;
+  }
+
+  .service__content {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .service__content h2 {
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  .service__nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .service__content .cta {
+    margin: 1em auto;
+  }
+}
+
+/* ===================== MOBILES ===================== */
+@media (max-width: 767px) {
   .service__detail {
     padding: 2rem 0;
   }

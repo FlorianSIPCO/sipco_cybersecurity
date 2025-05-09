@@ -91,8 +91,45 @@
     transform: scale(1.4);
 }
 
-/* Responsive design */
-@media screen and (max-width: 767px) {
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) { 
+    .services__title h1 {
+        margin-bottom: 1em;
+    }
+
+    .services__title h1::after {
+        height: 7px;
+        left: 70%;
+    }
+
+    .services__links {
+        font-size: 1.3rem;
+        height: max-content;
+        margin-top: 2em;
+        border: none;
+    }
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 979px) {
+    .services__title h1 {
+        margin-bottom: 1em;
+    }
+
+    .services__title h1::after {
+        display: none;
+    }
+
+    .services__links {
+        font-size: 1.2rem;
+        height: max-content;
+        margin-top: 2em;
+        border: none;
+    }
+}
+
+/* ===================== MOBILES ===================== */
+@media (max-width: 767px) {
     .services__container {
         display: flex;
         flex-direction: column;
