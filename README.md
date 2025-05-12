@@ -5,7 +5,7 @@
 </p>
 
 <br />
-Guide d'installation
+<h1 fontSize="32px">Guide d'installation</h1>
 
 ## Cloner le projet
 ```bash
