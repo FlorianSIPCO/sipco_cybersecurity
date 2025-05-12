@@ -229,7 +229,7 @@
 /* ===================== MOBILES ===================== */
 @media (max-width: 660px) {
   .engagement-circle-wrapper {
-    height: 30rem;
+    height: 20rem;
     padding: 0;
     width: 100vw;
     margin: 0;
@@ -255,7 +255,7 @@
   }
 
   .engagement-circle {
-    top: 37%;
+    top: 30%;
     left: 29%;
     width: 30rem;
     height: 30rem;

@@ -217,7 +217,7 @@
 
   .about__sectors {
     width: 90%;
-    margin-top: 3rem;
+    margin-top: 0;
   }
 
   .about__sectors h3 {

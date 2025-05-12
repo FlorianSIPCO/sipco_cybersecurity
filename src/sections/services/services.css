@@ -134,6 +134,8 @@
         display: flex;
         flex-direction: column;
         height: max-content;
+        margin-top: 2.5em;
+        margin-bottom: 1em;
     }
 
     .services__title {
