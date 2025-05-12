@@ -13,7 +13,7 @@ const SectorCard = ({ icon: Icon, title, description }) => {
         <div className="sector-card-face sector-card-front">
           <Icon className="icon" />
           <h2>{title}</h2>
-          <p className="hint"><PiHandTapFill /></p>
+          {/* <p className="hint"><PiHandTapFill /></p> */}
         </div>
 
         {/* Verso */}

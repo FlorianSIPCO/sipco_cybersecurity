@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './service-layout.css'
 import { IoMdHome } from "react-icons/io";
-import video from '../../assets/bg-cyber.mp4'
+// import video from '../../assets/bg-cyber.mp4'
 
 const serviceLinks = [
   { path: '/services/audit', label: 'Audit & Diagnostic' },
@@ -14,8 +14,7 @@ export default function ServiceDetailLayout({ title, children, current }) {
 
     return (
         <section className="service__detail">
-            <div className='service__video'>
-                {/* Video */}
+            {/* <div className='service__video'>
                 <video
                     autoPlay
                     loop
@@ -25,7 +24,7 @@ export default function ServiceDetailLayout({ title, children, current }) {
                 <source src={video} type='video/mp4'/>
                     Votre navigateur ne supporte pas la vidéo.
                 </video>
-            </div>
+            </div> */}
             <Link to='/' className='back-home'><IoMdHome /></Link>
             <div className="container service__overlay">
                 <h1 className="service__title">{title}</h1>

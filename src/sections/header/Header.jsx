@@ -13,7 +13,7 @@ const Header = () => {
       {/* Top bar */}
       <div className="topbar">
         <img src={logo} alt="Logo SIPCO" />
-        <Link to="https://api.sipco.fr/auth/login.php" className='cta'>
+        <Link to="https://api.sipco.fr/auth/login.php" target='_blank' className='cta'>
             Se connecter 
             <GoArrowUpRight className='icon'/>
         </Link>

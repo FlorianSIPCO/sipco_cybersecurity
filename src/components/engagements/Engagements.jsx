@@ -1,8 +1,7 @@
 import './engagements.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { FaShieldAlt, FaBolt, FaMapMarkerAlt, FaClipboardCheck, FaSmile } from 'react-icons/fa'
-import { PiHandTapFill } from "react-icons/pi";
-import { RxCross2 } from "react-icons/rx";
+import { IoShieldCheckmark } from "react-icons/io5";
 
 const engagements = [
   { icon: FaShieldAlt, title: 'Expertise', desc: "Plus de 40 ans d'expérience..." },
@@ -14,12 +13,10 @@ const engagements = [
 
 export default function EngagementCircle() {
   const [open, setOpen] = useState(false)
-  const [animateClose, setAnimateClose] = useState(false)
+  // const [animateClose, setAnimateClose] = useState(false)
   const [radius, setRadius] = useState('15rem')
+  const wrapperRef = useRef(null)
 
-  // Adapte le radius en fonction de l'écran
-  // const isMobile = window.innerWidth < 768
-  // const radius = isMobile ? "8rem" : "15rem"
 
   // Détecte la largeur et adapte le rayon
   const updateRadius = () => {
@@ -41,25 +38,26 @@ export default function EngagementCircle() {
     return () => window.removeEventListener('resize', updateRadius)
   }, [])
 
-  const handleToggle = () => {
-    if (open) {
-        setAnimateClose(true)
-        setTimeout(() => {
-            setOpen(false)
-            setAnimateClose(false)
-        }, 200)
-    } else {
-        setOpen(true)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setOpen(true)
+      },
+      { threshold: 0.5} // détection à 50% de visibilité
+    )
+
+    if (wrapperRef.current) {
+      observer.observe(wrapperRef.current)
     }
-  }
+    return () => {
+      if (wrapperRef.current) observer.unobserve(wrapperRef.current)
+    }
+  }, [])
 
   return (
-    <div className="engagement-circle-wrapper">
-      <button className="engagement-toggle" onClick={handleToggle}>
-        {open ? (
-            <RxCross2 className={`icon ${animateClose ? 'rotate' : ''}`}/> ) : (
-            <p>Nos engagements <PiHandTapFill className='hint' /> </p>
-        )}
+    <div ref={wrapperRef} className="engagement-circle-wrapper">
+      <button className="engagement-toggle">
+            <IoShieldCheckmark className="icon" />
       </button>
 
       <div className={`engagement-circle ${open ? 'active' : ''}`}>
