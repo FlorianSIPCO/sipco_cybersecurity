@@ -83,6 +83,12 @@ header {
     z-index: 1;
 }
 
+.desktop__cta .icon {
+  background: transparent;
+  color: var(--main-text);
+  border: 2px solid var(--variant-color);
+}
+
 .mobile__cta {
     display: none;
 }

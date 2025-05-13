@@ -13,6 +13,7 @@ import AuditPage from './pages/servicesPages/audit'
 import SecurityPage from './pages/servicesPages/security'
 import SupportPage from './pages/servicesPages/support'
 import LearningPage from './pages/servicesPages/learning'
+import Product from './pages/product/Product'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Footer />
           </>
         } />
+        <Route path='/product' element={<Product />} />
         <Route path='/backup' />
         <Route path='/services/audit' element={<AuditPage />} />
         <Route path='/services/security' element={<SecurityPage />} />

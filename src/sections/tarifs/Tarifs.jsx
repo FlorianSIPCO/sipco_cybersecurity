@@ -25,7 +25,7 @@ const Tarifs = () => {
               <p className="price">Sur devis</p>
               <ul>
                 <li><IoShieldCheckmark className="check" />Audit complet technique & organisationnel</li>
-                <li><IoShieldCheckmark className="check" />Surveillance continue (SOC)</li>
+                <li><IoShieldCheckmark className="check" />Surveillance continue</li>
                 <li><IoShieldCheckmark className="check" />Réponse aux incidents (PRA/PCA)</li>
                 <li><IoShieldCheckmark className="check" />Sessions de sensibilisation incluses</li>
               </ul>

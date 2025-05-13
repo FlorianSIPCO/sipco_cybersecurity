@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import './service-layout.css'
 import { IoMdHome } from "react-icons/io";
-// import video from '../../assets/bg-cyber.mp4'
 
 const serviceLinks = [
   { path: '/services/audit', label: 'Audit & Diagnostic' },

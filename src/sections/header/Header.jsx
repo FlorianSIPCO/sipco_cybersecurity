@@ -1,11 +1,10 @@
-import React from 'react'
 import './header.css'
-import { Link } from 'react-router-dom'
 import video from '../../assets/world.mp4'
 import logo from '../../assets/logo.png'
-import { GoArrowUpRight } from "react-icons/go";
+import { FaArrowRight } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -13,10 +12,10 @@ const Header = () => {
       {/* Top bar */}
       <div className="topbar">
         <img src={logo} alt="Logo SIPCO" />
-        <Link to="https://api.sipco.fr/auth/login.php" target='_blank' className='cta'>
-            Se connecter 
-            <GoArrowUpRight className='icon'/>
-        </Link>
+        <a href="#contact" className='cta'>
+            Nous contacter 
+            <IoMdCall className='icon'/>
+        </a>
       </div>
 
     {/* Main container */}
@@ -31,8 +30,8 @@ const Header = () => {
         <h3>Notre mission : assurer la continuité, la confidentialité et l'intégrité de vos systèmes et de vos données</h3>
         
         {/* CTA */}
-        <a href='#contact' className='cta desktop__cta'>Besoin d'un audit ou d'un conseil ? Contactez-nous<IoMdCall className='icon'/></a>
-        <a href='#contact' className='cta mobile__cta'>Besoin d'un audit ou d'un conseil ?<IoMdCall className='icon'/></a>
+        <Link to='/product' className='cta desktop__cta'>Découvrez notre outil<FaArrowRight className='icon'/></Link>
+        {/* <a href='#contact' className='cta mobile__cta'>Besoin d'un audit ou d'un conseil ?<IoMdCall className='icon'/></a> */}
       </div>
 
       {/* Video */}

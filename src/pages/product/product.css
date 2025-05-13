@@ -1,0 +1,232 @@
+.product__container {
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url('../../assets/cyber-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main__productContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product__container h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.product__container h1 span {
+    font-family: Orbitron;
+    font-weight: 500;
+    color: #fff;
+}
+
+.demo__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-height: 30vw;
+    background-color: #e8ebf0;
+    font-family: Poppins;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 1.5em 2em;
+    overflow-y: scroll;
+    margin: auto;
+    margin-left: 7%;
+    position: relative;
+    box-shadow: 0px 0px 15px var(--variant-color);
+}
+
+.demo__container h1 {
+    color: #3f4145;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.product__actions,
+.search {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  margin: 1rem 0 0 0;
+}
+
+.product__actions button {
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search label {
+    color: #3f4145;
+    font-weight: 600
+}
+
+.search__input {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #3f4145;
+  background-color: transparent;
+  color: #3f4145;
+}
+
+.product__table,
+.backup__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  border: 1px #e8ebf0;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #3f4145;
+}
+
+.product__table thead,
+.backup__table thead {
+  background-color: #e62525;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.product__table th {
+    font-weight: 600;
+}
+
+.product__table th,
+.product__table td,
+.backup__table th,
+.backup__table td {
+    padding: 0.6rem 0.8em;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.product__table tbody tr:hover {
+    background-color: #3f4145;
+    color: #fff !important;
+    transition: background-color 0.2s ease;
+}
+.product__table tbody tr:hover td:first-child {
+    background-color: rgb(228, 227, 227);
+    color: #3f4145;
+    transition: background-color 0.2s ease;
+}
+
+.product__table td:first-child {
+    background-color: #fafafa;
+    color: #3f4145;
+}
+
+.pagination {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #e62525;
+}
+
+#backup {
+    position: relative;
+    margin-top: 1em;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.backup__table {
+    position: relative;
+    font-size: 0.8em;
+}
+
+.backup__table tbody tr:nth-child(2) {
+    background-color: rgb(240, 179, 179);
+    color: rgb(148, 17, 17);
+    font-weight: bold;
+}
+
+/* Container title */
+.title__product {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vw;
+    padding: 2em;
+}
+
+.title__product h1 {
+    width: 100%;
+    margin-top: 0;
+}
+
+.title__product .cta {
+    background-color: var(--variant-color);
+    padding: 1em 2em;
+    margin: auto;
+}
+
+/* Flèches infos */
+.arrow__infos {
+    position: absolute;
+    display: flex;
+    top: 30%;
+    left: 45%;
+}
+
+.arrow__infos p {
+    color: black;
+    font-family: Caveat;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+.arrow__infos img {
+    position: absolute;
+    width: 30%;
+    top: -30px;
+    left: -60px;
+}
+
+.reverse {
+    z-index: 1;
+    top: 145%;
+    left: 15%;
+}
+
+.reverse img {
+    top: 45px;
+    left: -100px;
+    width: 30%;
+    transform: rotate(-50deg);
+}
