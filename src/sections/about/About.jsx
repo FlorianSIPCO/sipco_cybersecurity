@@ -1,4 +1,4 @@
-import './About.css'
+import './about.css'
 import { FaGavel, FaCity, FaIndustry } from 'react-icons/fa'
 import { MdBusiness } from 'react-icons/md'
 import SectorCard from '../../components/sectorCard/SectorCard'
