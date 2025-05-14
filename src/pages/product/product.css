@@ -193,6 +193,9 @@
     background-color: var(--variant-color);
     padding: 1em 2em;
     margin: auto;
+    background: linear-gradient(135deg, #e62525, #730707);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulseIcon 1.4s infinite ease-in-out;
 }
 
 /* Flèches infos */
@@ -229,4 +232,514 @@
     left: -100px;
     width: 30%;
     transform: rotate(-50deg);
+}
+
+/* ===================== PC PORTABLE ===================== */
+@media (min-width: 1024px) and (max-width: 1540px) {
+    .product__container h1 {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    .product__actions {
+        margin: 0;
+    }
+
+    .product__table {
+        font-size: 0.9em;
+    }
+
+    #backup {
+        font-size: 2.5em;
+    }
+
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 40%;
+        left: 35%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: 50px;
+        left: -80px;
+        transform: rotate(-70deg);
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 172%;
+        left: 8%;
+    }
+
+    .reverse img {
+        top: 50px;
+        left: -90px;
+        width: 30%;
+        transform: rotate(-60deg);
+    }
+}
+/* ========= Grands iPad/tablettes en paysage ========= */
+@media (min-width: 980px) and (max-width: 1024px) {
+        .product__container {
+        height: auto;
+        background-attachment: scroll;
+        padding-bottom: 4em;
+    }
+
+    .main__productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo__container {
+        width: 90%;
+        max-height: 60vh;
+        margin: auto;
+    }
+
+    .product__container h1 {
+        width: 100%;
+        padding: 2.5em 0 0.5em 0;
+    }
+    .product__container h1:nth-child(1) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__product {
+        width: 100%;
+        height: max-content;
+    }
+    .title__product .cta {
+        margin-top: 1em;
+    }
+
+    /* Gestion des tableaux */
+    .product__table,
+    .backup__table {
+        font-size: 0.7em;
+        width: 90vw;
+    }
+
+    .search {
+        width: max-content;
+    }
+
+    /* Flèches infos */
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 30%;
+        left: 45%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: 20px;
+        left: -90px;
+        transform: rotate(-70deg);
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 160%;
+        left: 15%;
+    }
+
+    .reverse img {
+        top: 55px;
+        left: -120px;
+        width: 30%;
+        transform: rotate(-50deg);
+    }
+}
+/* ===================== TABLETTE ===================== */
+@media (min-width: 820px) and (max-width: 979px) {
+    .product__container {
+        height: auto;
+        background-attachment: scroll;
+        padding-bottom: 4em;
+    }
+
+    .main__productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo__container {
+        width: 90%;
+        max-height: 60vh;
+        margin: auto;
+    }
+
+    .product__container h1 {
+        width: 100%;
+        padding: 2.5em 0 0.5em 0;
+    }
+    .product__container h1:nth-child(1) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__product {
+        width: 100%;
+        height: max-content;
+    }
+    .title__product .cta {
+        margin-top: 1em;
+    }
+
+    /* Gestion des tableaux */
+    .product__table,
+    .backup__table {
+        font-size: 0.7em;
+        width: max-content;
+    }
+
+    .search {
+        width: max-content;
+    }
+
+    #backup {
+        font-size: 1.5em;
+        width: max-content;
+    }
+
+    /* Flèches infos */
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 20%;
+        left: 25%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: 20px;
+        left: -90px;
+        transform: rotate(-70deg);
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 100%;
+        left: 5%;
+    }
+    .reverse p {
+        font-size: 2.2em;
+    }
+
+    .reverse img {
+        top: 55px;
+        left: -50px;
+        width: 20%;
+        transform: rotate(-50deg);
+    }
+}
+
+/* ===================== TABLETTE ===================== */
+@media (min-width: 768px) and (max-width: 819px) {
+    .product__container {
+        height: auto;
+        background-attachment: scroll;
+        padding-bottom: 4em;
+    }
+
+    .main__productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo__container {
+        width: 90%;
+        max-height: 60vh;
+        margin: auto;
+    }
+
+    .product__container h1 {
+        width: 100%;
+        padding: 2.5em 0 0.5em 0;
+    }
+    .product__container h1:nth-child(1) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__product {
+        width: 100%;
+        height: max-content;
+    }
+    .title__product .cta {
+        margin-top: 1em;
+    }
+
+    /* Gestion des tableaux */
+    .product__table,
+    .backup__table {
+        font-size: 0.7em;
+        width: max-content;
+    }
+
+    .search {
+        width: max-content;
+    }
+
+    #backup {
+        font-size: 1.5em;
+        width: max-content;
+    }
+
+    /* Flèches infos */
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 22%;
+        left: 25%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: 20px;
+        left: -90px;
+        transform: rotate(-70deg);
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 115%;
+        left: 5%;
+    }
+    .reverse p {
+        font-size: 2.2em;
+    }
+
+    .reverse img {
+        top: 55px;
+        left: -50px;
+        width: 20%;
+        transform: rotate(-50deg);
+    }
+}
+
+/* ================== MOBILES Android ================= */
+@media (min-width: 390px) and (max-width: 767px) {
+    .product__container {
+        height: auto;
+        background-attachment: scroll;
+        padding-bottom: 4em;
+    }
+
+    .main__productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo__container {
+        width: 90%;
+        max-height: 60vh;
+        margin: auto;
+    }
+
+    .product__container h1 {
+        width: 100%;
+        padding: 2.5em 0 0.5em 0;
+    }
+    .product__container h1:nth-child(1) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__product {
+        width: 100%;
+        height: max-content;
+    }
+    .title__product .cta {
+        margin-top: 1em;
+    }
+
+    /* Gestion des tableaux */
+    .product__table,
+    .backup__table {
+        font-size: 0.7em;
+        width: max-content;
+    }
+
+    .search {
+        width: max-content;
+    }
+
+    #backup {
+        font-size: 1.5em;
+        width: max-content;
+    }
+
+    /* Flèches infos */
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 30%;
+        left: 80%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: -27px;
+        left: -90px;
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 139%;
+        left: 15%;
+    }
+
+    .reverse img {
+        top: 45px;
+        left: -78px;
+        width: 20%;
+        transform: rotate(-50deg);
+    }
+}
+
+/* =================== MOBILES iOS =================== */
+@media (max-width: 389px) {
+        .product__container {
+        height: auto;
+        background-attachment: scroll;
+        padding-bottom: 4em;
+    }
+
+    .main__productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo__container {
+        width: 90%;
+        max-height: 60vh;
+        margin: auto;
+    }
+
+    .product__container h1 {
+        width: 100%;
+        padding: 2.5em 0 0.5em 0;
+    }
+    .product__container h1:nth-child(1) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__product {
+        width: 100%;
+        height: max-content;
+    }
+
+    .title__product .cta {
+        margin-top: 1em;
+    }
+
+    /* Gestion des tableaux */
+    .product__table,
+    .backup__table {
+        font-size: 0.7em;
+        width: max-content;
+    }
+
+    .search {
+        width: max-content;
+    }
+
+    #backup {
+        font-size: 1.5em;
+        width: max-content;
+    }
+
+    /* Flèches infos */
+    .arrow__infos {
+        position: absolute;
+        display: flex;
+        top: 35%;
+        left: 80%;
+    }
+
+    .arrow__infos p {
+        color: black;
+        font-family: Caveat;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 2.5em;
+        width: max-content;
+    }
+
+    .arrow__infos img {
+        position: absolute;
+        width: 30%;
+        top: -30px;
+        left: -83px;
+    }
+
+    .reverse {
+        z-index: 1;
+        top: 175%;
+        left: 15%;
+    }
+
+    .reverse img {
+        top: 45px;
+        left: -70px;
+        width: 20%;
+        transform: rotate(-50deg);
+    }
 }

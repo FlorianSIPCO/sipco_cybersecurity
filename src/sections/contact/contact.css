@@ -77,6 +77,19 @@
     font-size: 1.3rem;
   }
   
+/* ===================== PC PORTABLE ===================== */
+@media (min-width: 1024px) and (max-width: 1540px) {
+  .contact__container {
+    padding: 2em 0;
+    width: 90%;
+  }
+
+  .contact__container h1::after {
+    height: 7px;
+    left: 40%;
+  }
+}
+
 /* ========= Grands iPad/tablettes en paysage ========= */
 @media (min-width: 980px) and (max-width: 1024px) { 
   .contact__container {

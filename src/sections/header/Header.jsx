@@ -30,8 +30,7 @@ const Header = () => {
         <h3>Notre mission : assurer la continuité, la confidentialité et l'intégrité de vos systèmes et de vos données</h3>
         
         {/* CTA */}
-        <Link to='/product' className='cta desktop__cta'>Découvrez notre outil<FaArrowRight className='icon'/></Link>
-        {/* <a href='#contact' className='cta mobile__cta'>Besoin d'un audit ou d'un conseil ?<IoMdCall className='icon'/></a> */}
+        <Link to='/product' className='cta header__cta'>Découvrez notre solution<FaArrowRight className='icon'/></Link>
       </div>
 
       {/* Video */}
