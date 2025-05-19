@@ -24,7 +24,7 @@ const Header = () => {
         <h1><IoShieldCheckmarkSharp id='shield' />SIPCO  Cybersécurité</h1>
         <h2>Votre bouclier numérique face aux menaces informatiques</h2>
         <p>
-          Chez <a href='https://sipco.fr' target='_blank'>SIPCO</a>, nous croyons que la sécurité informatiques ne doit jamais être une option.
+          Chez <a href='https://sipco.fr' target='_blank'>SIPCO</a>, nous pensons que la sécurité informatiques n'est pas une option.
           Nos solutions de cybersécurité sont conçues pour protéger les entreprises, collectivités et professionnels contre les cybermenaces toujours plus nombreuses et sophistiquées.
         </p>
         <h3>Notre mission : assurer la continuité, la confidentialité et l'intégrité de vos systèmes et de vos données</h3>

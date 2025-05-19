@@ -26,11 +26,11 @@ const Contact = () => {
           </a>
           <a href="mailto:contact@sipco.fr" className='contact__link'>
             <MdEmail className='icon' />
-            Envoyer un email
+            contact@sipco.fr
           </a>
           <a href="tel:+33299761616" className='contact__link'>
             <FaPhoneAlt className='icon' />
-            Nous appeler
+            0299761616
           </a>
 
         </div>

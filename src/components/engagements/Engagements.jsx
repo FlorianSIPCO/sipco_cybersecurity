@@ -6,7 +6,7 @@ import { IoShieldCheckmark } from "react-icons/io5";
 const engagements = [
   { icon: FaShieldAlt, title: 'Expertise', desc: "Plus de 40 ans d'expérience..." },
   { icon: FaBolt, title: 'Réactivité', desc: "Intervention rapide en cas de suspicion..." },
-  { icon: FaMapMarkerAlt, title: 'Proximité', desc: "Disponible à Vitré, au cœur de la Bretagne." },
+  { icon: FaMapMarkerAlt, title: 'Proximité', desc: "Disponible à Vitré, au cœur de la Bretagne et dans toute la France." },
   { icon: FaClipboardCheck, title: 'Transparence', desc: "Des audits clairs, des solutions adaptées." },
   { icon: FaSmile, title: 'Sérénité', desc: "Accompagnement avant, pendant et après." },
 ]

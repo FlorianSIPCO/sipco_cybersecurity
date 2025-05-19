@@ -31,7 +31,7 @@
     background-color: var(--main-text);
     border-radius: 2px;
     top: 50%;
-    left: 55%;
+    left: 60%;
 }
 
 .services__title h2 {
@@ -95,7 +95,7 @@
 @media (min-width: 1024px) and (max-width: 1540px) {
     .services__title h1::after {
         height: 7px;
-        left: 70%;
+        left: 75%;
     }
 }
 
