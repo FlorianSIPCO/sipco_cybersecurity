@@ -21,7 +21,7 @@ const Tarifs = () => {
 
             <div className="tarif__card premium">
               <h2>Pack Intégral</h2>
-              <p className="price">À partir de 85€ HT/mois</p>
+              <p className="price">À partir de 55€ HT/mois</p>
               <ul>
                 <li><IoShieldCheckmark className="check" />Audit complet technique & organisationnel</li>
                 <li><IoShieldCheckmark className="check" />Surveillance continue</li>
