@@ -6,10 +6,8 @@ import arrow from '../../assets/arrow_black.png'
 import { IoMdHome } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import Footer from '../../sections/footer/Footer'
-import useScrollToContact from "../../utils/useScrollToContact";
 
 export default function Product() {
-  const handleScrollToContact = useScrollToContact();
   const itemsPerPage = 10
   const [currentPage, setCurrentPage] = useState(1)
   const [searchTerm, setSearchTerm] = useState("")
@@ -139,7 +137,7 @@ export default function Product() {
 
                 <div className="title__product">
                     <h1>Vous souhaitez en savoir plus sur notre produit ?</h1>
-                    <a href='/contact' className='cta' onClick={handleScrollToContact}>Contactez-nous</a>
+                    <a href='https://outlook.office365.com/book/RendezvousprisedinformationsSIPCO@sipco.fr/' target='_blank' className='cta'>Prendre rendez-vous</a>
                 </div>
             </div>
         </div>

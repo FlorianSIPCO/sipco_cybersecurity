@@ -10,6 +10,10 @@
     width: 8em;
 }
 
+.rdv {
+  padding: 0.5em 1em;
+}
+
 /* main container */
 header {
     display: flex;

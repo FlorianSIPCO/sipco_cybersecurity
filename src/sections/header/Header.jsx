@@ -12,9 +12,8 @@ const Header = () => {
       {/* Top bar */}
       <div className="topbar">
         <img src={logo} alt="Logo SIPCO" />
-        <a href="#contact" className='cta'>
-            Nous contacter 
-            <IoMdCall className='icon'/>
+        <a href="https://outlook.office365.com/book/RendezvousprisedinformationsSIPCO@sipco.fr/" target='_blank' className='cta rdv'>
+            Prendre rendez-vous 
         </a>
       </div>
 
